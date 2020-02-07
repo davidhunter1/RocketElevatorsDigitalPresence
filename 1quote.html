@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Smarty - Multipurpose + Admin</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+
+
+
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!--
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/R2.png" alt=""height="200" />
+						</a>
+
+						<!--
+							Top Nav
+
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+
+
+								<!--
+									.nav-onepage
+									Required for onepage navigation links
+
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="1homepage.html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="1homepage.html#service1">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="1homepage.html#work">
+										PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="1homepage.html#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="1homepage.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="1homepage.html#contact">
+											CONTACT
+										</a>
+									</li>
+
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+<body>
+
+	<div class="header" id="header-row" style="padding: 0px; overflow:hidden; height:200px;">
+   <div class="container-fluid" style="padding: 0px;">
+
+        <!-- You originally has it set up for two columns, remove the second
+    column as it is unneeded and set the first to always span all 12 columns
+    even when at its smallest (xs). Set the overflow to hidden so no matter
+    the height of your image it will never show outside this div-->
+         <div class="col-xs-12">
+                  <!-- place your image here -->
+               <img src="assets/images/Carnival_2.jpg" alt="company logo" style="width: 100%;">
+            </a>
+         </div>
+      </div>
+   </div>
+
+
+<div=header>
+
+			<header class="text-center mb-60">
+				<h2>Get an instant Quote for your Building</h2>
+				<p class="lead font-lato">
+
+					<div class="container">
+						Get a FREE quote in seconds, using your building specifications
+<br>
+<img  src="assets/images/smallpic333.jpg" class="img-thumbnail"><br>
+		<div class="custom-control custom-radio">
+				<form name=“myForm” onsubmit=GetQuote();>
+						<div id="firstQuestions">
+							<fieldset><legend> Get Started: What type of Building is the Elevator for? </legend>
+								<input type="radio"  name="radioBuilding" id="residential" onclick='buildingSelected();' value="residential">Residential
+								<input type="radio"  name="radioBuilding" id="commercial" onclick="buildingSelected();" value="commercial">Commercial
+								<input type="radio"  name="radioBuilding" id="corporate" onclick="buildingSelected();" value="Corporate">Corporate
+								<input type="radio"  name="radioBuilding" id="hybrid" onclick="buildingSelected();" value="Hybrid">Hybrid
+					</fieldset></div>
+
+						<div id="secondaryQuestionsResidential" style="display: none;">
+								Number of apartments in building<input type="text" id="numresidential1"></br>
+								Number of floors contained in the building<input type="text" id="numresidential2"></br>
+								Number of basements contained in the building<input type="text" id="numresidential3"></br>
+						</div>
+
+						<div id="secondaryQuestionsCommercial" style="display: none;">
+								Number of distinct businesses<input type="text" id="numcommercial4"></br>
+								Number of floors contained in the building<input type="text" id="numcommercial5"></br>
+								Number of basements contained in the building<input type="text" id="numcommercial6"></br>
+								Number of parking spaces available<input type="text" id="numcommercial7"></br>
+								Number of elevator cages to be deployed<input type="text" id="numcommercial8"></br>
+						</div>
+
+						<div id="secondaryQuestionsCorporate" style="display: none;">
+								Number of seperate tenant companies<input type="text" id="numcorporate9"></br>
+								Number of floors contained in the building<input type="text" id="numcorporate10"></br>
+								Number of basements contained in the building<input type="text" id="numcorporate11"></br>
+								Number of parking spaces available<input type="text" id="numcorporate12"></br>
+								Maximum number of occupants per floor<input type="text" id="numcorporate13"></br>
+						</div>
+
+						<div id="secondaryQuestionsHybrid" style="display: none;">
+								Number of distinct businesses<input type="text" id="numhybrid14"></br>
+								Number of floors contained in the building<input type="text" id="numhybrid15"></br>
+								Number of basements contained in the building<input type="text" id="numhybrid16"></br>
+								Number of parking spaces available<input type="text" id="numhybrid17"></br>
+								Maximum number of occupants per floor<input type="text" id="numhybrid18"></br>
+								Number of hours of activity of the building (Maximum being 24)<input type="text" id="numhybrid19"></br>
+						</div>
+
+						<div id="ElevatorTiers">
+								<input type="radio" name="radioTier" id="standard" onclick='tierSelected();'>Standard
+								<input type="radio" name="radioTier" id="premium" onclick="tierSelected();">Premium
+								<input type="radio" name="radioTier" id="excelium" onclick="tierSelected();">Excelium
+						</div>
+
+						<div id="quotePreview" style="display: none;">
+								Test Quote Preview
+						</div>
+<br>
+<br>
+						<input type="submit" value="Get Quote">
+				</form>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="container">
+
+					<header class="text-center mb-60">
+						<h2>Contact Us</h2>
+						<p class="lead font-lato">
+<h5>4468 Rue Wellington<div>
+1 800-123-4567 <div>
+Quebec <div> G2J 0C4 <div>
+For more information: <div>
+info@codeboxx.biz</H5></p>
+						<hr />
+					</header>
+
+
+
+
+
+
+							<hr />
+
+							<p>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Rue Wellington, Montreal, Canada</span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-123-4567</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span>
+							</p>
+
+						</div>
+						<!-- /INFO -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /CONTACT -->
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+							Every element of your Rocket Elevator is engineered with precision and assembled with pride to exacting standards. Allow us to help you fulfill your dream project.
+							<h2>(123) 456-7891</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+
+		<!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<script>
+
+		    var numresidential1;
+		    var numresidential2;
+		    var numresidential3;
+		    var numcommercial4;
+		    var numcommercial5;
+		    var numcommercial6;
+		    var numcommercial7;
+		    var numcommercial8;
+		    var numcorporate9;
+		    var numcorporate10;
+		    var numcorporate11;
+		    var numcorporate12;
+		    var numcorporate13;
+		    var numhybrid14;
+		    var numhybrid15;
+		    var numhybrid16;
+		    var numhybrid17;
+		    var numhybrid18;
+		    var w;
+		    var x;
+		    var y;
+		    var z;
+		    var elefinal;
+
+		    function GetQuote() {
+
+		        alert("ELEFINAL: " + elefinal);
+		    }
+
+		    function buildingSelected() {
+		        if(document.getElementById('residential').checked) {
+		            secondaryQuestionsCommercial.style.display = "none";
+		            secondaryQuestionsResidential.style.display = "block";
+		            secondaryQuestionsCorporate.style.display = "none";
+		            secondaryQuestionsHybrid.style.display = "none";
+		            quotePreview.style.display = "none";
+		        }else if(document.getElementById('commercial').checked) {
+		            secondaryQuestionsCommercial.style.display = "block";
+		            secondaryQuestionsCorporate.style.display = "none";
+		            secondaryQuestionsHybrid.style.display = "none";
+		            secondaryQuestionsResidential.style.display = "none"
+		            quotePreview.style.display = "none";
+		        }else if(document.getElementById('corporate').checked) {
+		            secondaryQuestionsCommercial.style.display = "none";
+		            secondaryQuestionsResidential.style.display = "none";
+		            secondaryQuestionsCorporate.style.display = "block";
+		            secondaryQuestionsHybrid.style.display = "none";
+		            quotePreview.style.display = "none";
+		          }else if(document.getElementById('hybrid').checked) {
+		            secondaryQuestionsCommercial.style.display = "none";
+		            secondaryQuestionsResidential.style.display = "none";
+		            secondaryQuestionsCorporate.style.display = "none";
+		            secondaryQuestionsHybrid.style.display = "block";
+		            quotePreview.style.display = "none";
+		        }
+		    }
+
+		    function tierSelected() {
+		        var numresidential1 = document.getElementById("numresidential1").value;
+		        var numresidential2 = document.getElementById("numresidential2").value;
+		        var numresidential3 = document.getElementById("numresidential3").value;
+		        var numcommercial4 = document.getElementById("numcommercial4").value;
+		        var numcommercial5 = document.getElementById("numcommercial5").value;
+		        var numcommercial6 = document.getElementById("numcommercial6").value;
+		        var numcommercial7 = document.getElementById("numcommercial7").value;
+		        var numcommercial8 = document.getElementById("numcommercial8").value;
+		        var numcorporate9 = document.getElementById("numcorporate9").value;
+		        var numcorporate10 = document.getElementById("numcorporate10").value;
+		        var numcorporate11 = document.getElementById("numcorporate11").value;
+		        var numcorporate12 = document.getElementById("numcorporate12").value;
+		        var numcorporate13 = document.getElementById("numcorporate13").value;
+		        var numhybrid14 = document.getElementById("numhybrid14").value;
+		        var numhybrid15 = document.getElementById("numhybrid15").value;
+		        var numhybrid16 = document.getElementById("numhybrid16").value;
+		        var numhybrid17 = document.getElementById("numhybrid17").value;
+		        var numhybrid18 = document.getElementById("numhybrid18").value;
+
+		        if(document.getElementById('residential').checked) {
+		            x = (numresidential1 / numresidential2)/6;
+		            z = Math.ceil((numresidential2 / 20)) * x
+		          // If the apartment has more than 20 stories, it is  necessary to provide an additional
+		          // column of elevators and thus  double the number of elevator shafts. A new column is therefore
+		          //  added to each new group of 20 stories.
+		        }else if(document.getElementById('commercial').checked) {
+		            z = numcommercial8;
+		        }else if(document.getElementById('corporate').checked) {
+		            x = ((numcorporate10 + numcorporate11) * numcorporate13) /100;
+		            y = (numcorporate10 + numcorporate11) / 20;
+		            z =  x / y;
+		        }else if(document.getElementById('hybrid').checked) {
+		            x = numhybrid15 + numhybrid16;
+		            y = (x * numhybrid18) / 100;
+		            w = x / 20;
+		            z = y / w;
+		        }
+
+
+		        if(document.getElementById('standard').checked) {
+		            elefinal = ((z * 7565) * 1.1).toFixed(2 );
+		        }else if(document.getElementById('premium').checked) {
+		            elefinal = ((z * 12345) * 1.13).toFixed(2);
+		        }else if(document.getElementById('excelium').checked) {
+		            elefinal = ((z * 15400) * 1.16).toFixed(2);
+		        }
+
+		              var div = document.getElementById('quotePreview');
+
+		        div.innerHTML = "Quote: $" + elefinal;
+
+		        quotePreview.style.display = "block";
+		    }
+		</script>
+
+
+		<!--
+			GMAP.JS
+			http://hpneo.github.io/gmaps/
+		-->
+		<!-- <script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+		<script src="assets/plugins/gmaps.js"></script>
+		<script>
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: -12.043333,
+					lng: -77.028333,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: -12.043333,
+					lng: -77.028333,
+					title: 'Company, Inc.'
+				});
+
+			});
+
+
+
+
+
+</html>

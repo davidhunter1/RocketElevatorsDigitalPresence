@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Smarty - Multipurpose + Admin</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- LAYER SLIDER -->
+		<link href="assets/plugins/slider.layerslider/css/layerslider.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!--
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky shadow-after-3 clearfix">
+
+				<!--
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+
+
+						<!-- BUTTONS -->
+						<ul class="float-right nav nav-pills nav-second-main">
+
+							<!-- SEARCH -->
+													<!-- /SEARCH -->
+
+						</ul>
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a class="logo float-left" href="index.html">
+							<img src="assets/images/R2.png" alt="" />
+						</a>
+
+						<!--
+							Top Nav
+
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!--
+									NOTE
+
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example:
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="1homepage.html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="1homepage.html#service1">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="1homepage.html#work">
+										PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="1homepage.html#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="1homepage.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="1homepage.html#contact">
+											CONTACT
+										</a>
+									</li>
+
+
+
+														</ul>
+													</div>
+
+												</div>
+											</li>
+										</ul>
+									</li>
+
+
+
+									<!--
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+
+				<!-- /Top Nav -->
+
+			</div>
+
+
+
+			<!-- LAYER SLIDER -->
+			<section id="slider">
+
+				<div class="slider">
+					<!--
+						AVAILABLE CLASSES
+							.h-300
+							.h-350
+							.h-400
+							.h-450
+							.h-500
+							.h-550
+							.h-600
+							.h-650
+							.h-700
+							.h-750
+							.h-800
+					-->
+					<div class="layerslider h-500" style="width:100%;">
+
+						<!-- SLIDE -->
+						<div class="ls-slide" >
+
+
+							<!-- background image -->
+							<img src="assets/images/Carnival_2.jpg" style="opacity:0.5" class="ls-bg" alt="Slide background"/>
+
+							<p class="ls-l" style="top:44%;left:50%;font-weight: 600;font-size:70px;color:#ffffff;white-space: nowrap;">
+								Rocket Elevators
+							</p>
+							<p class="ls-l" style="top:57%;left:50%;font-weight: 500;font-size:55px;color:#ffffff;white-space: nowrap;" >
+								Residential Services
+							</p>
+
+
+
+
+
+
+
+						</div>
+
+
+
+						<!-- SLIDE -->
+
+					</div>
+
+					<script>
+						var layer_options = {
+							responsive: 		false,
+							responsiveUnder: 	1280,
+							layersContainer: 	1280,
+							hoverPrevNext: 		true,
+							skinsPath: 			'assets/plugins/slider.layerslider/skins/'
+						}
+					</script>
+
+				</div>
+
+			</section>
+			<!-- /LAYER SLIDER -->
+
+
+
+
+
+			<!-- WELCOME -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-sm-6">
+							<header class="mb-40">
+								<h1 class="fw-300">Residential Buildings</h1>
+								<h2 class="fw-300 letter-spacing-1 fs-13"><span>Elevate Safety, Speed and Style</span></h2>
+							</header>
+
+							<p>Rocket Elevators has set the industry standards for Residential buildings since we opened in 1976.</p>
+
+							<p>Customizable with a variety of colors, finishes, and materials to suit any style, budget or project.
+								 Compared to traditional manual accordion gates and swinging doors, Premium 3-speed Sliding Doors &
+								 Fixtures offer ultimate style, safety, convenience, and quality.</p>
+
+								 <br>
+								  Get a quote online, now <br>
+								 <br>
+								 <a class="btn btn-default btn-lg" href="1quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+
+
+							<hr />
+
+							<!--
+								controlls-over		= navigation buttons over the image
+								buttons-autohide 	= navigation buttons visible on mouse hover only
+
+								data-plugin-options:
+									"singleItem": true
+									"autoPlay": true (or ms. eg: 4000)
+									"navigation": true
+									"pagination": true
+							-->
+
+							<!--
+								controlls-over		= navigation buttons over the image
+								buttons-autohide 	= navigation buttons visible on mouse hover only
+
+								data-plugin-options:
+									"singleItem": true
+									"autoPlay": true (or ms. eg: 4000)
+									"navigation": true
+									"pagination": true
+									"transitionStyle":"fadeUp" (fade,backSlide,goDown,fadeUp)
+							-->
+							<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"singleItem": true, "autoPlay": 3400, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+								<div>
+									<img class="img-fluid" src="assets/images/smallpic333.jpg" alt="">
+								</div>
+								<div>
+									<img class="img-fluid" src="assets/images/12residential.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- /WELCOME -->
+
+
+
+
+
+						<!-- /toggle -->
+
+						<!-- skills -->
+
+						<!-- recent news -->
+
+					</div>
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+							Every element of your Rocket Elevator is engineered with precision and assembled with pride to exacting standards. Allow us to help you fulfill your dream project.
+							<h2>(123) 456-7891</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+
+		<!-- LAYER SLIDER -->
+		<script src="assets/plugins/slider.layerslider/js/layerslider_pack.js"></script>
+		<script src="assets/js/view/demo.layerslider_slider.js"></script>
+
+	</body>
+</html>
